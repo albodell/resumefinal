@@ -1,0 +1,153 @@
+html,
+input,
+button {
+  font-size: 20px;
+  font-family: sans-serif;
+}
+body {
+  padding: 20px;
+  background-image: url(https://cdn.pixabay.com/photo/2015/04/20/18/54/koi-732007__340.png);
+  background-color: lightblue;
+  /* font: "open sans"; */
+}
+div {
+  background-color: rgb(249, 249, 253);
+  /* background-color: #f7f6eb; */
+  padding: 20px;
+  margin: 0 0 1rem;
+  size: 30px;
+  font-weight: 500;
+  font-family: "sans-serif", verdana;
+}
+
+input,
+textarea,
+button {
+  display: flexbox;
+  font-family: "Sans-Serif", Arial;
+  margin: auto;
+  /* background-color: whitesmoke; */
+  padding: 0.3rem;
+  border: solid 2px black;
+  border-radius: 0.2rem;
+  margin-bottom: 10px;
+}
+
+textarea {
+  display: block;
+  width: 1000px;
+  height: 250px;
+}
+label {
+  text-align: center;
+  display: block;
+  padding: 0.3rem;
+}
+
+legend {
+  padding: 5px 10px;
+}
+
+fieldset {
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 50px;
+
+  border: 2px groove;
+  padding: 0.3rem;
+  border-color: black;
+}
+
+select {
+  font-family: Arial;
+  position: relative;
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+a {
+  position: relative;
+}
+a span {
+  position: absolute;
+  display: none;
+  z-index: 99;
+}
+a:hover span {
+  display: block;
+}
+
+.aligned {
+  padding: 20px;
+  margin: 50 50 1rem;
+}
+.aligned textarea,
+label {
+  display: block;
+}
+
+#longer {
+  width: 400px;
+}
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 2px;
+  background-color: #ccc;
+  /* border-radius: 10px; */
+  /* border: 1px solid white; */
+  transform: scale(1, 2);
+}
+
+/* After slide changes */
+.toggle:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 10px;
+  /* border-radius: 50%; */
+  background-color: white;
+  top: 2px;
+  left: 6px;
+  transition: all 0.5s;
+}
+
+.checkbox:checked + .toggle::after {
+  left: 30px;
+}
+
+.checkbox:checked + .toggle {
+  background-color: #2196f3;
+}
+
+.checkbox {
+  display: none;
+}
+
+.test {
+  size: 10px;
+  margin-left: 10%;
+}
+.test textarea {
+  display: inline;
+}
+.test label {
+  text-align: left;
+}
+
+.test #hidden {
+  display: none;
+}
+.test #display {
+  display: inline-block;
+  width: 333px;
+  height: 250px;
+}
+
+.test #displaybig {
+  display: inline;
+  width: 1000px;
+  height: 250px;
+}
